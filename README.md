@@ -89,7 +89,7 @@ Verified that workstations could reach the router and server and resolve the int
   
 
 ## Files
-- `small-business-network.pkt` — _Add the saved Cisco Packet Tracer file._
+- [small-business-network.pkt](Small-Business-Network.pkt) — Download the saved Cisco Packet Tracer lab.
 
 ## Skills practiced
 Cisco IOS CLI, IPv4 subnetting basics, switch connectivity, default gateways, DHCP, DNS, ICMP/ping, interface troubleshooting, and network documentation.
