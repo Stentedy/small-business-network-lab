@@ -54,13 +54,39 @@ Reported results from lab testing:
 The router-to-switch link initially stayed down because the enabled router interface (`GigabitEthernet0/0`) was not the port connected to the switch. The actual cable was connected to `GigabitEthernet0/1`. Enabling the correct interface using `no shutdown` restored the intended link. This reinforced the importance of checking physical port mappings before changing configurations.
 
 ## Evidence
-Add your own screenshots to `screenshots/`:
-- `topology.png`
-- `router-interface.png`
-- `dhcp-pool.png`
-- `dns-record.png`
-- `client-ipconfig.png`
-- `ping-and-dns.png`
+
+## Network Topology
+
+The network consists of a Cisco 2911 router, a Cisco 2960 switch, three workstations, and one server.
+
+![Network Topology](screenshots/01-network-topology.png)
+
+## Router Configuration
+
+Configured GigabitEthernet0/1 with the IPv4 address 192.168.10.1/24.
+
+![Router Configuration](screenshots/02-router-configuration.png)
+
+## DHCP Configuration
+
+Configured Server0 to automatically assign IP addresses to office workstations.
+
+![DHCP Configuration](screenshots/03-dhcp-configuration.png)
+
+## DNS Configuration
+
+Created an A record mapping intranet.office.test to 192.168.10.10.
+
+![DNS Configuration](screenshots/04-dns-configuration.png)
+
+## Connectivity Testing
+
+Verified that workstations could reach the router and server and resolve the internal hostname.
+
+![Client IP Configuration](screenshots/05-pc-ip-configuration.png)
+
+![Connectivity Tests](screenshots/06-connectivity-tests.png)
+  
 
 ## Files
 - `small-business-network.pkt` — _Add the saved Cisco Packet Tracer file._
